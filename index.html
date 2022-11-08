@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My E-Mail Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form action="sendmail.js" method="POST">
+    <table>
+      <tr>
+        <td>
+          <label for="name">Name</label>
+        </td>
+        <td>
+          <input id="name" type="text" name="name" autofocus="on" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">E-Mail</label>
+        </td>
+        <td>
+          <input id="email" type="email" name="email" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="message">Message</label>
+        </td>
+        <td>
+          <textarea id="message" type="text" name="message" maxlength="255"
+          placeholder="Type your e-mail message here..."></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button>Send</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
